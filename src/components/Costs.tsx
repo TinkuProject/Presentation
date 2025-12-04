@@ -41,7 +41,6 @@ export default function Costs() {
                 <ZoomImage
                   src="/costs/total.png"
                   alt="Tabla resumen de costos"
-                  className="max-h-[400px] object-contain mx-auto"
                 />
               </div>
             </motion.div>
@@ -65,7 +64,6 @@ export default function Costs() {
                 <ZoomImage
                   src="/costs/personal.png"
                   alt="Tabla costo del personal"
-                  className="max-h-[400px] object-contain mx-auto"
                 />
               </div>
 
@@ -94,7 +92,6 @@ export default function Costs() {
                 <ZoomImage
                   src="/costs/infraestructura.png"
                   alt="Tabla infraestructura cloud"
-                  className="max-h-[400px] object-contain mx-auto"
                 />
               </div>
 

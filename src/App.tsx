@@ -13,24 +13,8 @@ import BusinessModel from "./components/BusinessModel";
 import Costs from "./components/Costs";
 import Conclusions from "./components/Conclusions";
 import Footer from "./components/Footer";
-import ScrollArrow from "./components/ScrollArrow";
 
 function App() {
-  const sections = [
-    "hero",
-    "resumen",
-    "problema",
-    "objetivos",
-    "metodologia",
-    "diagramas",
-    "base-datos",
-    "stack",
-    "pruebas",
-    "costos",
-    "modelo-negocio",
-    "conclusiones" // Última → no muestra flecha
-  ];
-
   return (
     <>
       <BackgroundDecoration />
