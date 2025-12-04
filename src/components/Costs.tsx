@@ -1,32 +1,12 @@
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import ZoomImage from "./ZoomImage";
 
 import "swiper/css";
 import "swiper/css/navigation";
 
 export default function Costs() {
-  const resumen = [
-    ["Horas/Hombre Totales", "2.560 horas"],
-    ["Costo de Personal", "Bs 75.976 (USD 10.916)"],
-    ["Servicios en la Nube", "Bs 2.436 (USD 350)"],
-    ["Costo Total del Proyecto", "Bs 78.412 (USD 11.266)"],
-  ];
-
-  const personal = [
-    ["Análisis y Diseño", "Bs 8.004"],
-    ["Implementación", "Bs 49.973"],
-    ["Pruebas y Mantenimiento", "Bs 9.995"],
-    ["Documentación", "Bs 8.004"],
-  ];
-
-  const infraestructura = [
-    ["Supabase Cloud", "Bs 1.044"],
-    ["Firebase Storage", "Bs 626"],
-    ["Railway Cloud", "Bs 209"],
-    ["Vercel Edge Network", "Bs 557"],
-  ];
-
   return (
     <section id="costos" className="py-20 px-6">
       <div className="max-w-6xl mx-auto text-center">
@@ -43,55 +23,51 @@ export default function Costs() {
           className="pb-10"
         >
 
-          {/* SLIDE 1 — RESUMEN GENERAL */}
-          <SwiperSlide>
+          {/* SLIDE 1 */}
+          <SwiperSlide className="!flex !justify-center !items-center">
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
-              className="h-[650px] p-10 rounded-3xl bg-white/10 backdrop-blur-xl 
-                         shadow-2xl border border-white/20 max-w-3xl mx-auto"
+              className="p-10 rounded-3xl bg-white/10 backdrop-blur-xl
+                         shadow-2xl border border-white/20 max-w-3xl w-full"
             >
               <h3 className="text-3xl font-bold text-white mb-6">
                 Resumen General del Proyecto
               </h3>
 
-              <table className="w-full text-left text-[#F8F9FA]/90">
-                <tbody>
-                  {resumen.map((r, i) => (
-                    <tr key={i} className="border-b border-white/20 hover:bg-white/5 transition">
-                      <td className="py-5 px-4 font-semibold">{r[0]}</td>
-                      <td className="py-5 px-4">{r[1]}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+              <div className="w-full flex justify-center items-center rounded-2xl 
+                              overflow-hidden border border-white/20 p-4 bg-white/5">
+                <ZoomImage
+                  src="/costs/total.png"
+                  alt="Tabla resumen de costos"
+                  className="max-h-[400px] object-contain mx-auto"
+                />
+              </div>
             </motion.div>
           </SwiperSlide>
 
-          {/* SLIDE 2 — COSTO DEL PERSONAL */}
-          <SwiperSlide>
+          {/* SLIDE 2 */}
+          <SwiperSlide className="!flex !justify-center !items-center">
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
-              className="h-[650px] p-10 rounded-3xl bg-white/10 backdrop-blur-xl 
-                         shadow-2xl border border-white/20 max-w-3xl mx-auto"
+              className="p-10 rounded-3xl bg-white/10 backdrop-blur-xl
+                         shadow-2xl border border-white/20 max-w-3xl w-full"
             >
               <h3 className="text-3xl font-bold text-white mb-6">
                 Costo del Personal
               </h3>
 
-              <table className="w-full text-left text-[#F8F9FA]/90">
-                <tbody>
-                  {personal.map((p, i) => (
-                    <tr key={i} className="border-b border-white/10 hover:bg-white/5 transition">
-                      <td className="py-5 px-4 font-semibold">{p[0]}</td>
-                      <td className="py-5 px-4">{p[1]}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+              <div className="w-full flex justify-center items-center rounded-2xl 
+                              overflow-hidden border border-white/20 p-4 bg-white/5">
+                <ZoomImage
+                  src="/costs/personal.png"
+                  alt="Tabla costo del personal"
+                  className="max-h-[400px] object-contain mx-auto"
+                />
+              </div>
 
               <p className="mt-6 text-[#F8F9FA]/70 text-lg leading-relaxed">
                 El costo de personal representa el componente principal del proyecto,
@@ -100,29 +76,27 @@ export default function Costs() {
             </motion.div>
           </SwiperSlide>
 
-          {/* SLIDE 3 — INFRAESTRUCTURA */}
-          <SwiperSlide>
+          {/* SLIDE 3 */}
+          <SwiperSlide className="!flex !justify-center !items-center">
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
-              className="h-[650px] p-10 rounded-3xl bg-white/10 backdrop-blur-xl 
-                         shadow-2xl border border-white/20 max-w-3xl mx-auto"
+              className="p-10 rounded-3xl bg-white/10 backdrop-blur-xl
+                         shadow-2xl border border-white/20 max-w-3xl w-full"
             >
               <h3 className="text-3xl font-bold text-white mb-6">
                 Infraestructura Cloud
               </h3>
 
-              <table className="w-full text-left text-[#F8F9FA]/90">
-                <tbody>
-                  {infraestructura.map((p, i) => (
-                    <tr key={i} className="border-b border-white/10 hover:bg-white/5 transition">
-                      <td className="py-5 px-4 font-semibold">{p[0]}</td>
-                      <td className="py-5 px-4">{p[1]}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+              <div className="w-full flex justify-center items-center rounded-2xl 
+                              overflow-hidden border border-white/20 p-4 bg-white/5">
+                <ZoomImage
+                  src="/costs/infraestructura.png"
+                  alt="Tabla infraestructura cloud"
+                  className="max-h-[400px] object-contain mx-auto"
+                />
+              </div>
 
               <p className="mt-6 text-[#F8F9FA]/70 text-lg leading-relaxed">
                 La arquitectura multi-proveedor reduce riesgos, mejora la flexibilidad 

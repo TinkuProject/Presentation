@@ -49,8 +49,8 @@ function App() {
       <Conclusions />
       <Footer />
 
-      {/* Flecha flotante inteligente */}
-      <ScrollArrow sections={sections} />
+      {/* Flecha flotante inteligente 
+      <ScrollArrow sections={sections} />*/}
     </>
   );
 }
