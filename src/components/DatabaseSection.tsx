@@ -1,18 +1,17 @@
-import { motion } from "framer-motion";
+import ZoomImage from "./ZoomImage";
 
 export default function DatabaseSection() {
   return (
-    <section id="base-datos" className="py-28 px-6">
+    <section id="base-datos" className="py-20 px-6">
       <div className="max-w-5xl mx-auto text-center">
 
         <h2 className="text-4xl font-extrabold text-white mb-12">
           Arquitectura y Base de Datos
         </h2>
 
-        <motion.img
-          whileHover={{ scale: 1.05 }}
-          src="/diagrams/database.png"
-          className="mx-auto max-w-3xl rounded-3xl border border-white/20 shadow-2xl cursor-pointer"
+        <ZoomImage
+          src="/diagrams/DBTinku.png"
+          alt="Arquitectura de la base de datos"
         />
 
         <p className="text-[#F8F9FA]/80 mt-10 text-lg leading-relaxed">

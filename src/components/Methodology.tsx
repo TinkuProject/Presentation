@@ -3,28 +3,30 @@ import { motion } from "framer-motion";
 export default function Methodology() {
   const items = [
     {
-      title: "Scrum",
-      text: "Uso de sprints cortos, backlog priorizado, planificación y retrospectivas para mantener un desarrollo iterativo y flexible."
+      title: "Metodología Ágil (Scrum)",
+      text: "Se trabajó con sprints cortos, backlog priorizado, reuniones de planificación, revisión y retrospectivas para mantener un desarrollo iterativo, adaptable y centrado en entregables funcionales."
     },
     {
-      title: "Kanban",
-      text: "Tablero visual mediante Trello para controlar el flujo de trabajo, mejorar la organización y evitar cuellos de botella."
+      title: "Kanban (gestión del flujo)",
+      text: "Se utilizó un tablero Kanban en Trello para visualizar tareas, limitar trabajo en progreso y evitar cuellos de botella durante el desarrollo."
     },
     {
-      title: "RUP + Scrum (modelo híbrido)",
-      text: "Se tomaron lineamientos formales de RUP para la planificación y documentación inicial, combinados con Scrum y Kanban para la ejecución diaria. Esto equilibró estructura metodológica y flexibilidad ágil."
+      title: "Modelo Híbrido (Scrum + lineamientos RUP)",
+      text: "Se aplicaron prácticas ágiles para la ejecución diaria y lineamientos de RUP para la planificación, análisis, documentación (UML) y control de calidad, logrando equilibrio entre estructura y flexibilidad."
     },
     {
-      title: "Proceso de desarrollo",
-      text: "Inicio → Análisis → Diseño (mockups + UML) → Construcción (web, móvil y API) → Pruebas → Despliegue."
+      title: "Proceso del Proyecto",
+      text: "Análisis de requisitos → Diseño (mockups, arquitectura y UML) → Desarrollo (web, móvil y API) → Pruebas (rendimiento, seguridad y usabilidad) → Despliegue."
     }
   ];
 
   return (
-    <section id="metodologia" className="py-28 px-6">
+    <section id="metodologia" className="py-20 px-6">
       <div className="max-w-6xl mx-auto text-center">
 
-        <h2 className="text-4xl font-extrabold text-white mb-12">Metodología</h2>
+        <h2 className="text-4xl font-extrabold text-white mb-12">
+          Metodología
+        </h2>
 
         <div className="grid md:grid-cols-2 gap-12">
           {items.map((item, i) => (
@@ -32,7 +34,7 @@ export default function Methodology() {
               key={i}
               whileHover={{ scale: 1.05 }}
               className="p-8 bg-white/10 backdrop-blur-xl border border-white/20 
-              rounded-3xl shadow-xl"
+                         rounded-3xl shadow-xl"
             >
               <h3 className="text-2xl font-bold text-white mb-4">{item.title}</h3>
               <p className="text-[#F8F9FA]/80">{item.text}</p>

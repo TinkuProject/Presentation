@@ -1,20 +1,20 @@
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import ZoomImage from "./ZoomImage";
 
 import "swiper/css";
 import "swiper/css/navigation";
 
 export default function Diagrams() {
   const imgs = [
-    { name: "Diagrama de Casos de Uso", file: "use-case.png" },
-    { name: "Diagrama de Secuencia", file: "sequence.png" },
-    { name: "Diagrama de Componentes", file: "components.png" },
-    { name: "Diagrama de Base de Datos", file: "database.png" }
+    { name: "Diagrama de Secuencia", img: "/diagrams/BussinesRequest.png" },
+    { name: "Diagrama de Componentes", img: "/diagrams/componentes.png" },
+    { name: "Diagrama de Despliegue", img: "/diagrams/Despliegue.png" }
   ];
 
   return (
-    <section id="diagramas" className="py-28 px-6">
+    <section id="diagramas" className="py-20 px-6">
       <div className="max-w-6xl mx-auto text-center relative">
 
         <h2 className="text-4xl font-extrabold text-white mb-12">
@@ -41,12 +41,9 @@ export default function Diagrams() {
                   {d.name}
                 </h3>
 
-                <img
-                  src={`/diagrams/${d.file}`}
+                <ZoomImage
+                  src={d.img}
                   alt={d.name}
-                  className="rounded-xl mx-auto border border-white/20 
-                             shadow-[0_0_20px_rgba(0,100,200,0.4)]
-                             hover:scale-105 transition-transform duration-300"
                 />
               </motion.div>
             </SwiperSlide>

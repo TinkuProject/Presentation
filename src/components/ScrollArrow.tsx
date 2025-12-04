@@ -34,6 +34,7 @@ export default function ScrollArrow({ sections }: ScrollArrowProps) {
 
   const nextSectionId = !isLast ? sections[currentIndex + 1] : null;
 
+  if (currentIndex === 0) return null;
   if (isLast || !nextSectionId) return null;
 
   return (

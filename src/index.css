@@ -4,13 +4,7 @@
 
 html, body {
   scroll-behavior: smooth;
-  background: linear-gradient(
-    135deg,
-    #316CB9 0%,
-    #0078B7 30%,
-    #0374AB 60%,
-    #4776B0 100%
-  );
+  background: linear-gradient(135deg, #0E4D92 0%, #0A66C2 40%, #0B84D8 100%);
   color: #F8F9FA;
   font-family: 'Inter', sans-serif;
   overflow-x: hidden;

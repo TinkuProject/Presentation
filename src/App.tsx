@@ -17,6 +17,7 @@ import ScrollArrow from "./components/ScrollArrow";
 
 function App() {
   const sections = [
+    "hero",
     "resumen",
     "problema",
     "objetivos",

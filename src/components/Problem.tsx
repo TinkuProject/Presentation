@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
+import ZoomImage from "./ZoomImage";
 
 export default function Problem() {
   return (
-    <section id="problema" className="py-20 px-6">
+    <section id="problema" className="py-20 px-6 relative z-[1]">
       <div className="max-w-5xl mx-auto">
 
         <motion.h2
@@ -11,7 +12,7 @@ export default function Problem() {
           transition={{ duration: 0.8 }}
           className="text-4xl font-extrabold text-white mb-10"
         >
-          Problema y necesidad
+          Problemática
         </motion.h2>
 
         <motion.div
@@ -20,11 +21,10 @@ export default function Problem() {
           transition={{ duration: 1 }}
           className="p-10 bg-white/10 backdrop-blur-xl rounded-3xl shadow-2xl border border-white/20"
         >
-          <p className="text-[#F8F9FA]/80 text-lg leading-relaxed">
-            La información sobre negocios, servicios y eventos en Cochabamba está dispersa.
-            Los usuarios deben consultar múltiples plataformas y los emprendedores tienen baja visibilidad.
-            Esta desconexión limita el crecimiento económico y dificulta el acceso a información confiable.
-          </p>
+          <ZoomImage
+            src="/diagrams/Ishikawa.png"
+            alt="Representación del problema"
+          />
         </motion.div>
 
       </div>

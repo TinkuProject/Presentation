@@ -13,7 +13,7 @@ export default function Objectives() {
   ];
 
   return (
-    <section id="objetivos" className="py-28 px-6">
+    <section id="objetivos" className="py-20 px-6">
       <div className="max-w-6xl mx-auto">
 
         <h2 className="text-4xl font-extrabold text-white text-center mb-16">
