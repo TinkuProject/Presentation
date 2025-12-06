@@ -11,10 +11,28 @@ import TechStack from "./components/TechStack";
 import Testing from "./components/Testing";
 import BusinessModel from "./components/BusinessModel";
 import Costs from "./components/Costs";
+import DemoSection from "./components/DemoSection";
 import Conclusions from "./components/Conclusions";
 import Footer from "./components/Footer";
+import ScrollArrow from "./components/ScrollArrow";
 
 function App() {
+  const sections = [
+    "hero",
+    "summary",
+    "problem",
+    "objectives",
+    "methodology",
+    "diagrams",
+    "database",
+    "stack",
+    "testing",
+    "costs",
+    "business-model",
+    "demo",
+    "conclusions" // last → arrow hidden
+  ];
+
   return (
     <>
       <BackgroundDecoration />
@@ -30,11 +48,12 @@ function App() {
       <Testing />
       <Costs />
       <BusinessModel />
+      <DemoSection />
       <Conclusions />
       <Footer />
 
-      {/* Flecha flotante inteligente 
-      <ScrollArrow sections={sections} />*/}
+      {/* Flecha flotante inteligente */}
+      <ScrollArrow sections={sections} />
     </>
   );
 }

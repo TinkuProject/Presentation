@@ -3,7 +3,7 @@ import ZoomImage from "./ZoomImage";
 
 export default function Problem() {
   return (
-    <section id="problema" className="py-20 px-6 relative z-[1]">
+    <section id="problem" className="py-20 px-6 relative z-[1]">
       <div className="max-w-5xl mx-auto">
 
         <motion.h2

@@ -2,7 +2,7 @@ import ZoomImage from "./ZoomImage";
 
 export default function DatabaseSection() {
   return (
-    <section id="base-datos" className="py-20 px-6">
+    <section id="database" className="py-20 px-6">
       <div className="max-w-5xl mx-auto text-center">
 
         <h2 className="text-4xl font-extrabold text-white mb-12">
@@ -10,7 +10,7 @@ export default function DatabaseSection() {
         </h2>
 
         <ZoomImage
-          src="/diagrams/DBTinku.png"
+          src="/diagrams/DbTinku.png"
           alt="Arquitectura de la base de datos"
         />
 

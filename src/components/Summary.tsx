@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 export default function Summary() {
 
   return (
-    <section id="resumen" className="py-20 px-6">
+    <section id="summary" className="py-20 px-6">
       <div className="max-w-3xl mx-auto text-center">
 
         <h2 className="text-5xl font-extrabold text-white mb-12">

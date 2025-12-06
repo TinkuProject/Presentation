@@ -14,7 +14,7 @@ export default function Diagrams() {
   ];
 
   return (
-    <section id="diagramas" className="py-20 px-6">
+    <section id="diagrams" className="py-20 px-6">
       <div className="max-w-6xl mx-auto text-center relative">
 
         <h2 className="text-4xl font-extrabold text-white mb-12">

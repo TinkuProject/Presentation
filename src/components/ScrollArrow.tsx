@@ -10,24 +10,31 @@ export default function ScrollArrow({ sections }: ScrollArrowProps) {
 
   // Detectar sección visible
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const index = sections.indexOf(entry.target.id);
-            if (index !== -1) setCurrentIndex(index);
-          }
-        });
-      },
-      { threshold: 0.6 }
-    );
+    function handleScroll() {
+      const scrollPos = window.scrollY + window.innerHeight * 0.3; // zona de detección
 
-    sections.forEach((id) => {
-      const el = document.getElementById(id);
-      if (el) observer.observe(el);
-    });
+      let activeIndex = 0;
 
-    return () => observer.disconnect();
+      for (let i = 0; i < sections.length; i++) {
+        const el = document.getElementById(sections[i]);
+        if (!el) continue;
+
+        const top = el.offsetTop;
+        const height = el.offsetHeight;
+
+        if (scrollPos >= top && scrollPos < top + height) {
+          activeIndex = i;
+          break;
+        }
+      }
+
+      setCurrentIndex(activeIndex);
+    }
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // inicial
+
+    return () => window.removeEventListener("scroll", handleScroll);
   }, [sections]);
 
   const isLast = currentIndex === sections.length - 1;
@@ -40,7 +47,7 @@ export default function ScrollArrow({ sections }: ScrollArrowProps) {
   return (
     <a
       href={`#${nextSectionId}`}
-      className="fixed left-1/2 -translate-x-1/2 bottom-8 z-50 cursor-pointer"
+      className="fixed right-8 bottom-8 z-50 cursor-pointer"
     >
       <motion.div
         animate={{ y: [0, 8, 0] }}

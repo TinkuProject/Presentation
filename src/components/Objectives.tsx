@@ -13,7 +13,7 @@ export default function Objectives() {
   ];
 
   return (
-    <section id="objetivos" className="py-20 px-6">
+    <section id="objectives" className="py-20 px-6">
       <div className="max-w-6xl mx-auto">
 
         <h2 className="text-4xl font-extrabold text-white text-center mb-16">
@@ -41,6 +41,11 @@ export default function Objectives() {
         </motion.div>
 
         {/* OBJETIVOS ESPECIFICOS */}
+        <h3 className="text-3xl font-bold text-white mb-10 text-center flex items-center justify-center gap-3">
+          <FiCheckCircle className="text-[#FFD700] text-3xl drop-shadow" />
+          Objetivos Específicos
+        </h3>
+
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {goals.map((g, i) => (
             <motion.div

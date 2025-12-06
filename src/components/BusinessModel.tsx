@@ -47,7 +47,7 @@ export default function BusinessModel() {
   const withImage = slides.filter(s => s.img);
 
   return (
-    <section id="modelo-negocio" className="py-20 px-6">
+    <section id="business-model" className="py-20 px-6">
       <div className="max-w-6xl mx-auto text-center">
 
         <h2 className="text-4xl font-extrabold text-white mb-12">

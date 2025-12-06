@@ -16,7 +16,7 @@ export default function Testing() {
   ];
 
   return (
-    <section id="pruebas" className="py-20 px-6">
+    <section id="testing" className="py-20 px-6">
       <div className="max-w-6xl mx-auto text-center relative">
 
         <h2 className="text-4xl font-extrabold text-white mb-12">
