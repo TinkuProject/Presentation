@@ -3,13 +3,13 @@ import { FiTarget, FiCheckCircle } from "react-icons/fi";
 
 export default function Objectives() {
   const goals = [
-    "Implementar autenticación segura y gestión de usuarios.",
-    "Desarrollar catálogos digitales para negocios y servicios.",
-    "Integrar notificaciones automáticas personalizables.",
-    "Implementar pagos, monedas digitales y suscripciones.",
-    "Incorporar reportes, métricas y análisis de uso.",
-    "Gestionar eventos con inscripción y recordatorios.",
-    "Establecer calificaciones, reseñas y rankings."
+    "Implementar un sistema de autenticación segura, mediante mecanismos de registro, inicio de sesión y gestión de cuentas, que permita administrar el acceso de los distintos tipos de usuarios en la plataforma.",
+    "Implementar funcionalidades de gestión de emprendimientos y servicios profesionales, mediante catálogos digitales con información visual y descriptiva que facilite la organización y visibilidad de cada negocio.",
+    "Implementar un sistema de notificaciones, utilizando mecanismos automáticos que faciliten la comunicación entre la plataforma y los usuarios.",
+    "Desarrollar un sistema de pagos que permita gestionar transacciones dentro de la plataforma, incluyendo el uso de monedas digitales, suscripciones y servicios adicionales.",
+    "Implementar herramientas de análisis de datos que permitan generar reportes y métricas sobre el uso de la plataforma, apoyando la toma de decisiones estratégicas por parte de los administradores.",
+    "Implementar un sistema de gestión de eventos que permitan a los usuarios crear, promocionar y participar en eventos.",
+    "Establecer un sistema de posicionamiento basado en calificaciones y reseñas de usuarios para permitir destacar a los negocios y servicios mejor valorados dentro de la plataforma."
   ];
 
   return (
@@ -35,8 +35,7 @@ export default function Objectives() {
           </div>
 
           <p className="text-[#F8F9FA]/90 text-lg leading-relaxed text-center max-w-3xl mx-auto">
-            Desarrollar un sistema multiplataforma para la difusión y posicionamiento
-            de emprendimientos y servicios en Cochabamba.
+            Desarrollar un sistema multiplataforma, empleando una arquitectura modular, para la difusión y posicionamiento de emprendimientos comerciales y servicios profesionales en el departamento de Cochabamba.
           </p>
         </motion.div>
 

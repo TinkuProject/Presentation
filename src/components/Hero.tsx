@@ -41,7 +41,7 @@ export default function Hero() {
 
       {/* BOTÓN */}
       <motion.a
-        href="#resumen"
+        href="#resume"
         whileHover={{ scale: 1.1 }}
         className="mt-10 px-10 py-4 bg-[#046ea6] rounded-full text-lg font-semibold
         shadow-[0_0_25px_#0078B7] hover:bg-[#0369a1] transition-all"
