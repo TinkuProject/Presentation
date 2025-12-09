@@ -2,11 +2,12 @@ import { motion } from "framer-motion";
 import {
   SiReact,
   SiTypescript,
-  SiTailwindcss,
+  SiJavascript,
   SiFlutter,
   SiDart,
   SiGooglemaps,
   SiNodedotjs,
+  SiNextdotjs,
   SiSupabase,
   SiFirebase,
   SiFigma,
@@ -16,8 +17,8 @@ import {
 
 const webStack = [
   { icon: <SiReact size={60} />, name: "React" },
-  { icon: <SiTypescript size={60} />, name: "TypeScript" },
-  { icon: <SiTailwindcss size={60} />, name: "Tailwind CSS" }
+  { icon: <SiNextdotjs size={60} />, name: "Next.js" },
+  { icon: <SiJavascript size={60} />, name: "JavaScript" },
 ];
 
 const mobileStack = [
@@ -28,6 +29,7 @@ const mobileStack = [
 
 const apiStack = [
   { icon: <SiNodedotjs size={60} />, name: "Node.js" },
+  { icon: <SiTypescript size={60} />, name: "TypeScript" },
   { icon: <SiSupabase size={60} />, name: "Supabase" },
   { icon: <SiFirebase size={60} />, name: "Firebase Storage" }
 ];

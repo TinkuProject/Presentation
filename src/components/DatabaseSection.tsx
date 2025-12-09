@@ -10,7 +10,7 @@ export default function DatabaseSection() {
         </h2>
 
         <ZoomImage
-          src="/diagrams/database.png"
+          src="/diagrams/database_final.png"
           alt="Arquitectura de la base de datos"
         />
 
