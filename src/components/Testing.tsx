@@ -8,11 +8,11 @@ import "swiper/css/navigation";
 
 export default function Testing() {
   const tests = [
-    { title: "Pruebas de Seguridad (JWT)", img: "/testing/seguridad.png" },
-    { title: "Pruebas de Rendimiento", img: "/testing/rendimiento.png" },
+    { title: "Pruebas de Seguridad (JWT)", img: "/testing/security.png" },
+    { title: "Pruebas de Rendimiento", img: "/testing/performance.png" },
     { title: "Usabilidad (Likert 8.86)", img: "/testing/usabilidad.png" },
     { title: "Pruebas de Compatibilidad", img: "/testing/compatibilidad.png" },
-    { title: "Mitigación de Riesgos OWASP", img: "/testing/owasp.png" }
+    { title: "Mitigación de Riesgos OWASP", img: "/testing/owasp_2.png" }
   ];
 
   return (

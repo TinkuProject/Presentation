@@ -39,7 +39,7 @@ export default function Costs() {
               <div className="w-full flex justify-center items-center rounded-2xl 
                               overflow-hidden border border-white/20 p-4 bg-white/5">
                 <ZoomImage
-                  src="/costs/personal.png"
+                  src="/costs/personal_cost.png"
                   alt="Tabla costo del personal"
                 />
               </div>

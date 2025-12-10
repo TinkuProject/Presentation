@@ -3,6 +3,7 @@ import {
   SiReact,
   SiTypescript,
   SiJavascript,
+  SiTailwindcss,
   SiFlutter,
   SiDart,
   SiGooglemaps,
@@ -18,6 +19,7 @@ import {
 const webStack = [
   { icon: <SiReact size={60} />, name: "React" },
   { icon: <SiNextdotjs size={60} />, name: "Next.js" },
+  { icon: <SiTailwindcss size={60} />, name: "Tailwind CSS" },
   { icon: <SiJavascript size={60} />, name: "JavaScript" },
 ];
 
