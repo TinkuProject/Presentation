@@ -15,7 +15,7 @@ export default function DemoSection() {
 
           {/* WEB */}
           <motion.a
-            href="https://tinku.umaunivalle.com/"
+            href="https://tinku.doc-ia.cloud/"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.03 }}
