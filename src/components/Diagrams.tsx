@@ -9,7 +9,10 @@ import "swiper/css/navigation";
 export default function Diagrams() {
   const imgs = [
     { name: "Diagrama de Secuencia", img: "/diagrams/BussinesRequest.png" },
+    { name: "Diagrama de Secuencia - Socio", img: "/diagrams/Socio.jpg" },
+    { name: "Diagrama de Secuencia - Administrador", img: "/diagrams/Admin.jpg" },
     { name: "Diagrama de Componentes", img: "/diagrams/componentes.png" },
+    { name: "Diagrama de Componentes - Simplificado", img: "/diagrams/Diagramadecomponentes.jpg" },
     { name: "Diagrama de Despliegue", img: "/diagrams/Despliegue.png" }
   ];
 
