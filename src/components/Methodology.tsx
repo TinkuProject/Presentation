@@ -104,7 +104,7 @@ export default function Methodology() {
 
           {/* SLIDE 2 – TARJETAS DE SPRINTS MEJORADAS */}
           <SwiperSlide>
-            <div className="grid md:grid-cols-3 gap-12">
+            <div className="grid md:grid-cols-2 gap-12">
               {sprints.map((s, i) => (
                 <motion.div
                   key={i}
@@ -112,13 +112,14 @@ export default function Methodology() {
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5, delay: i * 0.12 }}
                   whileHover={{ scale: 1.07 }}
-                  className="p-8 bg-white/10 backdrop-blur-xl 
-                             border border-white/20 rounded-3xl shadow-xl
-                             hover:shadow-[#4CC9F0]/20 hover:shadow-2xl 
-                             transition-all duration-300 relative overflow-hidden"
+                  className={`p-8 bg-white/10 backdrop-blur-xl 
+                            border border-white/20 rounded-3xl shadow-xl
+                            hover:shadow-[#4CC9F0]/20 hover:shadow-2xl 
+                            transition-all duration-300 relative overflow-hidden
+                            max-w-md mx-auto
+                            ${i === 2 ? "md:col-span-2 md:max-w-sm" : ""}`}
                 >
-
-                  {/* Header con icono y título */}
+                  {/* Header */}
                   <div className="flex flex-col items-center mb-4">
                     {s.icon}
                     <h3 className="text-xl font-bold text-white mt-3">

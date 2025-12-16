@@ -15,6 +15,28 @@ export default function Costs() {
           Estimación de Costos
         </h2>
 
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="mb-14 p-10 rounded-3xl 
+             bg-gradient-to-br from-[#316CB9]/30 to-[#0374AB]/30
+             backdrop-blur-xl border border-white/20 shadow-2xl
+             max-w-4xl mx-auto"
+        >
+          <h3 className="text-3xl font-bold text-white mb-6 text-center">
+            Técnica Utilizada
+          </h3>
+
+          <p className="text-[#F8F9FA]/90 text-lg leading-relaxed text-center max-w-3xl mx-auto">
+            La estimación de costos del proyecto se realizó utilizando el
+            <strong> método pragmático</strong>, el cual valora el esfuerzo real de desarrollo
+            en función de horas/hombre. Para su aplicación, se consideraron salarios promedio
+            de desarrolladores <strong>junior</strong> con experiencia menor a un año,
+            de acuerdo con el contexto del mercado tecnológico boliviano.
+          </p>
+        </motion.div>
+
         <Swiper
           modules={[Navigation]}
           navigation
@@ -39,7 +61,7 @@ export default function Costs() {
               <div className="w-full flex justify-center items-center rounded-2xl 
                               overflow-hidden border border-white/20 p-4 bg-white/5">
                 <ZoomImage
-                  src="/costs/personal_cost.png"
+                  src="/costs/personal.png"
                   alt="Tabla costo del personal"
                 />
               </div>
@@ -67,13 +89,13 @@ export default function Costs() {
               <div className="w-full flex justify-center items-center rounded-2xl 
                               overflow-hidden border border-white/20 p-4 bg-white/5">
                 <ZoomImage
-                  src="/costs/infraestructura.png"
+                  src="/costs/infrastructure.png"
                   alt="Tabla infraestructura cloud"
                 />
               </div>
 
               <p className="mt-6 text-[#F8F9FA]/70 text-lg leading-relaxed">
-                La arquitectura multi-proveedor reduce riesgos, mejora la flexibilidad 
+                La arquitectura multi-proveedor reduce riesgos, mejora la flexibilidad
                 y optimiza los costos operativos sin comprometer el rendimiento.
               </p>
             </motion.div>
@@ -95,7 +117,7 @@ export default function Costs() {
               <div className="w-full flex justify-center items-center rounded-2xl 
                               overflow-hidden border border-white/20 p-4 bg-white/5">
                 <ZoomImage
-                  src="/costs/total.png"
+                  src="/costs/total_cost.png"
                   alt="Tabla resumen de costos"
                 />
               </div>
@@ -103,6 +125,10 @@ export default function Costs() {
           </SwiperSlide>
 
         </Swiper>
+
+        <p className="mt-6 text-base text-[#F8F9FA]/60 italic">
+          Nota: Conversión utilizada: 1 USD = 6,96 Bs.
+        </p>
 
         {/* Flechas Swiper */}
         <style>{`
