@@ -28,7 +28,7 @@ export default function Costs() {
             Técnica Utilizada
           </h3>
 
-          <p className="text-[#F8F9FA]/90 text-lg leading-relaxed text-center max-w-3xl mx-auto">
+          <p className="text-[#F8F9FA]/90 text-lg leading-relaxed text-left md:text-justify max-w-3xl mx-auto">
             La estimación de costos del proyecto se realizó utilizando el
             <strong> método pragmático</strong>, el cual valora el esfuerzo real de desarrollo
             en función de horas/hombre. Para su aplicación, se consideraron salarios promedio
@@ -66,7 +66,7 @@ export default function Costs() {
                 />
               </div>
 
-              <p className="mt-6 text-[#F8F9FA]/70 text-lg leading-relaxed">
+              <p className="mt-6 text-[#F8F9FA]/70 text-lg leading-relaxed text-left md:text-justify">
                 El costo de personal representa el componente principal del proyecto,
                 basado en el método de horas/hombre y salarios promedio del sector tecnológico boliviano.
               </p>
@@ -94,7 +94,7 @@ export default function Costs() {
                 />
               </div>
 
-              <p className="mt-6 text-[#F8F9FA]/70 text-lg leading-relaxed">
+              <p className="mt-6 text-[#F8F9FA]/70 text-lg leading-relaxed text-left md:text-justify">
                 La arquitectura multi-proveedor reduce riesgos, mejora la flexibilidad
                 y optimiza los costos operativos sin comprometer el rendimiento.
               </p>

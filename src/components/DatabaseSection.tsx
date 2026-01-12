@@ -14,7 +14,7 @@ export default function DatabaseSection() {
           alt="Arquitectura de la base de datos"
         />
 
-        <p className="text-[#F8F9FA]/80 mt-10 text-lg leading-relaxed">
+        <p className="text-[#F8F9FA]/80 mt-10 text-lg leading-relaxed text-left md:text-justify mx-auto">
           Supabase (PostgreSQL) gestiona usuarios, negocios, eventos,
           transacciones, servicios, productos y calificaciones. Incluye autenticación,
           políticas de seguridad y sincronización en tiempo real.

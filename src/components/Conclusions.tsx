@@ -51,7 +51,7 @@ export default function Conclusions() {
             >
               <div className="flex items-start gap-3">
                 <FiChevronsRight className="text-[#FFD700] text-2xl mt-1" />
-                <p className="text-[#F8F9FA]/85 leading-relaxed">{rec}</p>
+                <p className="text-[#F8F9FA]/85 leading-loose text-left md:text-justify">{rec}</p>
               </div>
             </motion.div>
           ))}

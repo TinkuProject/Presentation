@@ -34,32 +34,32 @@ export default function Objectives() {
             <h3 className="text-3xl font-bold text-white">Objetivo General</h3>
           </div>
 
-          <p className="text-[#F8F9FA]/90 text-lg leading-relaxed text-center max-w-3xl mx-auto">
+          <p className="text-[#F8F9FA]/90 text-lg leading-relaxed text-left md:text-justify max-w-4xl mx-auto">
             Desarrollar un sistema multiplataforma, empleando una arquitectura modular, para la difusión y posicionamiento de emprendimientos comerciales y servicios profesionales en el departamento de Cochabamba.
           </p>
         </motion.div>
 
-        {/* OBJETIVOS ESPECIFICOS */}
+        {/* OBJETIVOS ESPECÍFICOS */}
         <h3 className="text-3xl font-bold text-white mb-10 text-center flex items-center justify-center gap-3">
           <FiCheckCircle className="text-[#FFD700] text-3xl drop-shadow" />
           Objetivos Específicos
         </h3>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {goals.map((g, i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.5 }}
-              className="p-6 bg-white/10 backdrop-blur-xl rounded-2xl
-                         border border-white/10 shadow-xl cursor-pointer
-                         hover:bg-white/20 transition-all"
+              whileHover={{ scale: 1.04 }}
+              className="p-7 bg-white/10 backdrop-blur-xl rounded-2xl
+                 border border-white/10 shadow-xl cursor-pointer
+                 hover:bg-white/20 transition-colors duration-200"
             >
-              <div className="flex items-start gap-3">
-                <FiCheckCircle className="text-[#FFD700] text-2xl mt-1" />
-                <p className="text-[#F8F9FA]/90 text-md leading-relaxed">
+              <div className="flex items-start gap-4">
+                <FiCheckCircle className="text-[#FFD700]/80 text-2xl mt-1 shrink-0" />
+                <p className="text-[#F8F9FA]/90 text-md leading-relaxed text-left md:text-justify">
                   {g}
                 </p>
               </div>

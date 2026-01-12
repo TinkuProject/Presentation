@@ -14,29 +14,29 @@ type Slide = {
 
 export default function BusinessModel() {
   const slides: Slide[] = [
-    { 
+    {
       title: "Modelo B2B2C",
       text: "La plataforma conecta negocios locales y prestadores de servicios con usuarios finales, generando valor para ambos mediante visibilidad, gestión digital y acceso centralizado a información."
     },
-    { 
+    {
       title: "Propuesta de Valor",
       text: "Unifica turismo, comercio y transporte en una sola app. Los usuarios obtienen información confiable y beneficios; los negocios gestionan catálogos, promociones y métricas."
     },
-    { 
+    {
       title: "Monedas Digitales",
       text: "1 moneda = 1 Bs. Simplifican pagos internos y promociones. Se incluyen bonificaciones iniciales y modelos futuros de recompensas para fomentar la participación."
     },
-    { 
+    {
       title: "Suscripciones",
       text: "Tres planes dirigidos a socios comerciales, con bonificaciones en monedas digitales y beneficios progresivos.",
       img: "/negocio/suscripciones.png"
     },
-    { 
+    {
       title: "Comparativa de Plataformas",
       text: "La matriz comparativa evidencia la diferenciación de Tinku frente a soluciones tradicionales.",
       img: "/negocio/comparativa.png"
     },
-    { 
+    {
       title: "Costo Operativo Anual",
       text: "Incluye infraestructura digital como Supabase, Firebase, Railway, Vercel y dominio.",
       img: "/negocio/costo_anual.png"
@@ -75,7 +75,9 @@ export default function BusinessModel() {
                              shadow-2xl border border-white/20 text-left"
                 >
                   <h3 className="text-2xl font-bold text-white mb-3">{s.title}</h3>
-                  <p className="text-[#F8F9FA]/80 leading-relaxed">{s.text}</p>
+                  <p className="text-[#F8F9FA]/80 leading-relaxed text-justify">
+                    {s.text}
+                  </p>
                 </motion.div>
               ))}
             </div>
@@ -93,7 +95,7 @@ export default function BusinessModel() {
               >
                 <h3 className="text-3xl font-bold text-white mb-4">{s.title}</h3>
 
-                <p className="text-[#F8F9FA]/80 text-lg leading-relaxed mb-8">
+                <p className="text-[#F8F9FA]/80 leading-relaxed text-left md:text-justify">
                   {s.text}
                 </p>
 

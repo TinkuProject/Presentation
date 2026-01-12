@@ -40,7 +40,7 @@ export default function Problem() {
             Formulación del problema
           </h3>
 
-          <p className="text-[#F8F9FA]/90 text-lg leading-relaxed">
+          <p className="text-[#F8F9FA]/90 text-lg leading-relaxed text-left md:text-justify">
             ¿Cómo mejorar la difusión y el posicionamiento de los emprendimientos comerciales y servicios profesionales 
             en el departamento de Cochabamba para facilitar el acceso a información confiable y fortalecer la conexión 
             entre emprendedores, negocios y consumidores?
